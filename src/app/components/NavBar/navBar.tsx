@@ -16,7 +16,7 @@ function NavBar() {
         ))}
       </div>
       <div className="flex items-center">
-        <Button buttonText="SHOP" />
+        <Button buttonText="SHOP" bgColour="white"  />
       </div>
     </div>
   );

@@ -18,8 +18,12 @@ function BannerDetails() {
       </div>
 
       <div className=" flex flex-row gap-x-4">
-        <Button buttonText="SHOP THE DROP" />
-        <OutlinedButton buttonText="LEARN MORE" />
+        <Button buttonText="SHOP THE DROP" bgColour="white" />
+        <OutlinedButton
+          buttonText="LEARN MORE"
+          showArrow={false}
+          showOutline={true}
+        />
       </div>
     </div>
   );
