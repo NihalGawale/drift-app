@@ -6,9 +6,9 @@ import React from "react";
 function SectionFive() {
   return (
     <SectionLayout>
-      <div className="flex items-center w-[50%] ">
-        <div className=" w-full h-[328px] flex flex-col gap-y-8 justify-center align-middle">
-          <p className="text-5xl font-extrabold">
+      <div className=" w-full h-[367px] flex items-center md:w-[50%] md:h-auto]">
+        <div className=" w-full  h-full md:h-[328px] flex flex-col gap-y-5 md:gap-y-8 justify-center align-middle">
+          <p className="text-4xl md:text-5xl font-extrabold">
             Pure White <br />
             Snowfall Serenity
           </p>
@@ -18,7 +18,11 @@ function SectionFive() {
             with intention.This isn’t just clean — it’s composed.
           </p>
           <div className=" flex flex-row gap-x-4">
-            <Button buttonText="BUY NOW" bgColour="white" />
+            <OutlinedButton
+              buttonText="BUY NOW"
+              showArrow={false}
+              showOutline={true}
+            />
             <OutlinedButton
               buttonText="EXPLORE"
               showArrow={true}
@@ -28,7 +32,7 @@ function SectionFive() {
         </div>
       </div>
 
-      <div className="w-[50%] h-[640px] bg-green-300 flex justify-center items-center ">
+      <div className="w-[334px] h-[348px] md:w-[50%] md:h-[640px] bg-green-300 flex justify-center items-center ">
         <p className="text-6xl font-extrabold text-black">Sneaker Image 3</p>
       </div>
     </SectionLayout>

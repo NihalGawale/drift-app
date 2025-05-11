@@ -4,10 +4,10 @@ import React from "react";
 function SectionOne() {
   return (
     <SectionLayout>
-      <div className=" w-[50%] h-[547px] flex flex-col gap-y-8 justify-center">
+      <div className="w-full md:w-[50%] h-[547px] flex flex-col gap-y-5 justify-center">
         <p>Elevate Every Step</p>
-        <p className="text-5xl font-extrabold">Step Into the Future of Style</p>
-        <div className="font-semibold flex flex-col gap-y-8">
+        <p className="text-4xl font-extrabold">Step Into the Future of Style</p>
+        <div className="font-semibold flex flex-col gap-y-5 md:gap-y-8">
           <p>
             <span className="text-2xl font-semibold">DRIFT</span> sneakers
             aren’t just designed — they’re engineered to move with purpose.
@@ -23,7 +23,7 @@ function SectionOne() {
           </div>
         </div>
       </div>
-      <div className="w-[50%] h-[640px] bg-green-300 flex justify-center items-center ">
+      <div className="w-full md:w-[50%] h-[640px] bg-green-300 flex justify-center items-center ">
         <p className="text-6xl font-extrabold text-black">Video Container</p>
       </div>
     </SectionLayout>
