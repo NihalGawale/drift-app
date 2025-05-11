@@ -1,16 +1,44 @@
+"use client";
+
+import React, { useEffect, useState } from "react";
 import { Themes } from "@/app/Theme/Theme";
-import React from "react";
 
 function SectoinTwo() {
+  const [width, setWidth] = useState<number | null>(null);
+
+  useEffect(() => {
+    function updateWidth() {
+      setWidth(window.innerWidth);
+    }
+
+    updateWidth(); // Set width initially
+    window.addEventListener("resize", updateWidth);
+
+    return () => window.removeEventListener("resize", updateWidth);
+  }, []);
+
+  const breakpoint = 768;
+
+  // ✅ Only render layout *after* width is set (i.e. on client)
+  if (width === null) return null;
   return (
     <div
-      className="w-full h-[368px] flex justify-center items-center"
+      className="w-full h-[264px] md:h-[368px] flex justify-center items-center"
       style={{ backgroundColor: Themes.sectionGrayColour }}
     >
-      <div className="w-[60%] h-[144px] flex justify-center">
-        <p className="text-5xl font-extrabold">
-          "Discover the vibrant colours of our <br /> sneaker—find the perfect
-          pair to <br /> express your style!"
+      <div className="w-full md:w-[60%] md:h-[144px] flex justify-center">
+        <p className="w-[335px] h-[136px] md:w-full md:h-full text-[25px] md:text-5xl font-extrabold pl-6 md:p-0">
+          {width > breakpoint ? (
+            <>
+              "Discover the vibrant colours of our <br /> sneaker—find the
+              perfect pair to <br /> express your style!"
+            </>
+          ) : (
+            <>
+              "Discover the vibrant colours of oursneaker—find the perfect pair
+              to express your style!"
+            </>
+          )}
         </p>
       </div>
     </div>

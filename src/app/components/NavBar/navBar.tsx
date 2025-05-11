@@ -16,7 +16,12 @@ function NavBar() {
         ))}
       </div>
       <div className="flex items-center">
-        <Button buttonText="SHOP" bgColour="white"  />
+        <button
+          type="button"
+          className="bg-white text-black md:px-10 md:py-[15px] font-semibold text-sm px-6 py-2 font-roboto flex justify-center items-center"
+        >
+          SHOP
+        </button>
       </div>
     </div>
   );
