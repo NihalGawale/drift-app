@@ -2,6 +2,7 @@ import { Themes } from "@/app/Theme/Theme";
 import Button from "@/app/Theme/UI/Button";
 import OutlinedButton from "@/app/Theme/UI/OutlinedButton";
 import SectionLayout from "@/app/Theme/UI/SectionLayout";
+import Image from "next/image";
 import React from "react";
 
 function SectionThree() {
@@ -35,8 +36,13 @@ function SectionThree() {
         </div>
       </div>
 
-      <div className="w-[334px] h-[348px] md:w-[50%] md:h-[640px] flex justify-center items-center rounded-xl shadow-xl md:shadow-2xl shadow-gray-600">
-        <p className="text-6xl font-extrabold text-white text-center">Sneaker Image 1</p>
+      <div className="w-[334px] h-[348px] md:w-[50%] md:h-[640px] flex justify-center items-center shadow-xl md:shadow-2xl shadow-gray-600 relative">
+        <Image
+          className="rounded-xl"
+          src="/assets/1.png"
+          alt="sneaker1"
+          fill={true}
+        />
       </div>
     </SectionLayout>
   );
