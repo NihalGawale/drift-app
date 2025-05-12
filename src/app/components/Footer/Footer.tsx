@@ -14,7 +14,7 @@ function Footer() {
         <div className=" flex justify-center">
           <p>LOGO</p>
         </div>
-        <div className=" w-full flex flex-col md:flex-row justify-center items-center gap-y-10 md:gap-x-6">
+        <div className=" w-full flex flex-col md:flex-row justify-center items-center gap-y-10 md:gap-x-6 font-normal tracking-wide">
           {footerConstantsOne.map((item) => (
             <div key={item.key}>{item.value}</div>
           ))}

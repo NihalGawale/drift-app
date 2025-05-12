@@ -12,7 +12,7 @@ function SectionThree() {
           <p className="text-4xl md:text-5xl font-extrabold">
             White & Beige <br /> Morning Brew
           </p>
-          <p className="font-medium">
+          <p className="font-normal tracking-wide">
             Like the comfort of your favourite café, these tones feel familiar
             yet special. <br />
             Soft beige and crisp white evoke quiet mornings, warm mugs, and slow
@@ -35,8 +35,8 @@ function SectionThree() {
         </div>
       </div>
 
-      <div className="w-[334px] h-[348px] md:w-[50%] md:h-[640px] bg-green-300 flex justify-center items-center ">
-        <p className="text-6xl font-extrabold text-black">Sneaker Image 1</p>
+      <div className="w-[334px] h-[348px] md:w-[50%] md:h-[640px] flex justify-center items-center rounded-xl shadow-xl md:shadow-2xl shadow-gray-600">
+        <p className="text-6xl font-extrabold text-white text-center">Sneaker Image 1</p>
       </div>
     </SectionLayout>
   );

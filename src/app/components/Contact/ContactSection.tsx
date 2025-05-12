@@ -31,7 +31,7 @@ const contactConstants = [
 function ContactSection() {
   return (
     <div
-      className=" w-full h-[965px] md:h-[864px] flex justify-center items-center"
+      className=" w-full h-[1100px] md:h-[864px] flex justify-center items-center"
       style={{ backgroundColor: Themes.sectionGrayColour }}
     >
       <div className="w-full h-full px-5 py-16 md:px-16 md:py-28 flex flex-col items-center gap-y-20">
@@ -43,19 +43,19 @@ function ContactSection() {
           </div>
         </div>
 
-        <div className="w-full h-[666px] md:w-[1312px] md:h-[202px] flex flex-col md:flex-row gap-y-12 md:gap-x-12">
+        <div className="w-full h-[666px] md:w-[1312px] md:h-[202px] flex flex-col md:flex-row gap-y-20 md:gap-x-12">
           {contactConstants.map((item) => (
             <div
               key={item.key}
-              className="w-full h-[182px] md:w-[405px] md:h-full flex flex-col items-center gap-y-6"
+              className="w-full h-auto md:w-[405px] md:h-full flex flex-col items-center gap-y-6"
             >
               <div>{item?.icon}</div>
-              <div className="flex flex-col items-center gap-y-4">
+              <div className="flex flex-col items-center gap-y-4 text-center">
                 <p className="text-2xl md:text-4xl font-extrabold">
                   {item?.title}
                 </p>
-                <p>{item?.description}</p>
-                <p>{item?.contact}</p>
+                <p className="font-normal tracking-wide">{item?.description}</p>
+                <p className="text-[16px] font-normal tracking-wide">{item?.contact}</p>
               </div>
             </div>
           ))}

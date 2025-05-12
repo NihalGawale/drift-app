@@ -26,8 +26,10 @@ function SectionFour() {
   return (
     <SectionLayout>
       {width > breakpoint && (
-        <div className=" w-[334px] h-[348px] md:w-[50%] md:h-[640px] bg-green-300 flex justify-center items-center ">
-          <p className="text-6xl font-extrabold text-black">Sneaker Image 2</p>
+        <div className=" w-[334px] h-[348px] md:w-[50%] md:h-[640px] flex justify-center items-center rounded-xl shadow-xl md:shadow-2xl shadow-gray-600 ">
+          <p className="text-6xl font-extrabold text-white text-center">
+            Sneaker Image 2
+          </p>
         </div>
       )}
       <div className="w-full h-[367px] flex items-center md:w-[50%] md:h-auto] ">
@@ -36,7 +38,7 @@ function SectionFour() {
             Pistachio <br />
             Freshly Picked
           </p>
-          <p className="font-medium">
+          <p className="font-normal tracking-wide">
             Drawn from the first signs of spring, pistachio is both earthy and
             uplifting.
             <br />
@@ -59,8 +61,10 @@ function SectionFour() {
         </div>
       </div>
       {width < breakpoint && (
-        <div className=" w-[334px] h-[348px] md:w-[50%] md:h-[640px] bg-green-300 flex justify-center items-center ">
-          <p className="text-6xl font-extrabold text-black">Sneaker Image 2</p>
+        <div className=" w-[334px] h-[348px] md:w-[50%] md:h-[640px] flex justify-center items-center  rounded-xl shadow-xl md:shadow-2xl shadow-gray-600 ">
+          <p className="text-6xl font-extrabold text-white text-center">
+            Sneaker Image 2
+          </p>
         </div>
       )}
     </SectionLayout>

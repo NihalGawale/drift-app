@@ -12,7 +12,7 @@ function SectionFive() {
             Pure White <br />
             Snowfall Serenity
           </p>
-          <p className="font-medium">
+          <p className="font-normal tracking-wide">
             Like untouched snow at dawn, pure white carries a sense of calm and
             stillness. It’s pure, poised, and powerful — made for those who move
             with intention.This isn’t just clean — it’s composed.
@@ -32,8 +32,10 @@ function SectionFive() {
         </div>
       </div>
 
-      <div className="w-[334px] h-[348px] md:w-[50%] md:h-[640px] bg-green-300 flex justify-center items-center ">
-        <p className="text-6xl font-extrabold text-black">Sneaker Image 3</p>
+      <div className="w-[334px] h-[348px] md:w-[50%] md:h-[640px]flex justify-center items-center  rounded-xl shadow-xl md:shadow-2xl shadow-gray-600">
+        <p className="text-6xl font-extrabold text-white text-center">
+          Sneaker Image 3
+        </p>
       </div>
     </SectionLayout>
   );
