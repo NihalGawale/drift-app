@@ -28,9 +28,9 @@ function CustomerTestimonial({ rating = 4 }) {
 
   const getSlideWidth = () => {
     if (typeof window !== "undefined") {
-      return window.innerWidth >= 768 ? 500 : 390;
+      return window.innerWidth >= 768 ? 500 : 290;
     }
-    return 390; // default fallback
+    return 290; // default fallback
   };
 
   const scroll = (direction: string) => {
@@ -72,20 +72,20 @@ function CustomerTestimonial({ rating = 4 }) {
       className="w-full h-[800px] md:h-[864px] flex justify-center items-center relative"
       style={{ backgroundColor: Themes.sectionGrayColour }}
     >
-      <div className="w-[80%] md:w-[70%] h-[640px] relative">
-        <div className="flex flex-col gap-y-20">
+      <div className="w-[80%] md:w-[70%] h-[660px] md:h-[640px] relative">
+        <div className="flex flex-col gap-y-16">
           <div className="flex flex-col gap-y-6">
             <p className="text-5xl font-extrabold">Customer Testimonial</p>
             <p>See why they love every step.</p>
           </div>
           <div
             ref={scrollRef}
-            className=" w-full flex overflow-auto font-medium hide-scrollbar gap-x-10 md:gap-x-0"
+            className=" w-full flex overflow-auto font-normal tracking-wide hide-scrollbar gap-x-10 md:gap-x-0"
           >
-            <div className="min-w-[350px] md:min-w-[592px]">
+            <div className="min-w-[250px] md:min-w-[592px]">
               <div className="flex flex-col gap-y-8 md:pr-20">
                 <span className="flex gap-x-1">{displayRatingStar()}</span>
-                <p>
+                <p className=" break-words">
                   I wasn’t sure what to expect, but after wearing these for a
                   few days, I can honestly say they’re a game-changer. The
                   comfort is next-level, and the design makes me feel confident
@@ -100,7 +100,7 @@ function CustomerTestimonial({ rating = 4 }) {
                 </div>
               </div>
             </div>
-            <div className="min-w-[350px] md:min-w-[592px]">
+            <div className="min-w-[250px] md:min-w-[592px]">
               <div className="flex flex-col gap-y-8 md:pr-20">
                 <span className="flex gap-x-1">{displayRatingStar()}</span>
                 <p>
@@ -118,7 +118,7 @@ function CustomerTestimonial({ rating = 4 }) {
                 </div>
               </div>
             </div>
-            <div className="min-w-[350px] md:min-w-[592px]">
+            <div className="min-w-[250px] md:min-w-[592px]">
               <div className="flex flex-col gap-y-8 md:pr-20">
                 <span className="flex gap-x-1">{displayRatingStar()}</span>
                 <p>
@@ -136,7 +136,7 @@ function CustomerTestimonial({ rating = 4 }) {
                 </div>
               </div>
             </div>
-            <div className="min-w-[350px] md:min-w-[592px]">
+            <div className="min-w-[250px] md:min-w-[592px]">
               <div className="flex flex-col gap-y-8 md:pr-20">
                 <span className="flex gap-x-1">{displayRatingStar()}</span>
                 <p>
@@ -154,7 +154,7 @@ function CustomerTestimonial({ rating = 4 }) {
                 </div>
               </div>
             </div>
-            <div className="min-w-[350px] md:min-w-[592px]">
+            <div className="min-w-[250px] md:min-w-[592px]">
               <div className="flex flex-col gap-y-8 md:pr-20">
                 <span className="flex gap-x-1">{displayRatingStar()}</span>
                 <p className="break-words">
@@ -173,13 +173,12 @@ function CustomerTestimonial({ rating = 4 }) {
               </div>
             </div>
           </div>
-          <div className="absolute bottom-5 md:bottom-32 left-0 md:right-1 mb-2 mr-0 md:mr-2 z-10">
+          <div className="absolute bottom-3 md:bottom-32 left-0 md:right-1 mb-2 mr-0 md:mr-2 z-10">
             <SliderDots total={totalSlides} current={currentSlide} />
           </div>
-          <div className="absolute bottom-0 md:bottom-[100px] right-0 md:right-1 mb-2 mr-0 md:mr-2 z-10 flex justify-end gap-x-4">
+          <div className="absolute bottom-0 md:bottom-[100px] right-0 md:right-1 md:mb-2 mr-0 md:mr-2 z-10 flex justify-end gap-x-4">
             <button
               onClick={() => scroll("left")}
-              // className="hover:cursor-pointer"
               disabled={currentSlide === 0}
               className={`hover:cursor-pointer ${
                 currentSlide === 0 ? "opacity-40 cursor-not-allowed" : ""
