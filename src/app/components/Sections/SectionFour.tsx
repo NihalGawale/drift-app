@@ -3,6 +3,7 @@
 import Button from "@/app/Theme/UI/Button";
 import OutlinedButton from "@/app/Theme/UI/OutlinedButton";
 import SectionLayout from "@/app/Theme/UI/SectionLayout";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 function SectionFour() {
@@ -26,10 +27,13 @@ function SectionFour() {
   return (
     <SectionLayout>
       {width > breakpoint && (
-        <div className=" w-[334px] h-[348px] md:w-[50%] md:h-[640px] flex justify-center items-center rounded-xl shadow-xl md:shadow-2xl shadow-gray-600 ">
-          <p className="text-6xl font-extrabold text-white text-center">
-            Sneaker Image 2
-          </p>
+        <div className="relative w-[334px] h-[348px] md:w-[50%] md:h-[640px] flex justify-center items-center rounded-xl shadow-xl md:shadow-2xl shadow-gray-600 ">
+          <Image
+            className="rounded-xl"
+            src="/assets/2.png"
+            alt="sneaker2"
+            fill={true}
+          />
         </div>
       )}
       <div className="w-full h-[367px] flex items-center md:w-[50%] md:h-auto] ">
@@ -61,10 +65,13 @@ function SectionFour() {
         </div>
       </div>
       {width < breakpoint && (
-        <div className=" w-[334px] h-[348px] md:w-[50%] md:h-[640px] flex justify-center items-center  rounded-xl shadow-xl md:shadow-2xl shadow-gray-600 ">
-          <p className="text-6xl font-extrabold text-white text-center">
-            Sneaker Image 2
-          </p>
+        <div className="relative w-[334px] h-[348px] md:w-[50%] md:h-[640px] flex justify-center items-center  rounded-xl shadow-xl md:shadow-2xl shadow-gray-600 ">
+          <Image
+            className="rounded-xl"
+            src="/assets/2.png"
+            alt="sneaker2"
+            fill={true}
+          />
         </div>
       )}
     </SectionLayout>
