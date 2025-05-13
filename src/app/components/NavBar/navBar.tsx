@@ -9,13 +9,16 @@ const navBaritems = [
 ];
 function NavBar() {
   return (
-    <div className="w-full h-[72px] flex relative items-center  md:px-16 md:justify-around ">
-      <div className="w-[100px] h-full relative ">
+    <div className="w-full h-[72px] flex relative items-center md:ml-0 md:px-16 md:justify-around pl-4">
+      <div className="w-[90px] h-[70px] relative ">
         <Image src="/assets/BrandLogo.jpeg" fill={true} alt="brand-logo" />
       </div>
-      <div className="w-[180px] h-[70px] relative ml-[38px] ">
-      <Image src="/assets/brandNameImage.png" fill={true} alt="brand-name-logo" />
-
+      <div className="w-[150px] h-[60px] relative ml-[15px]  ">
+        <Image
+          src="/assets/brandNameImage.png"
+          fill={true}
+          alt="brand-name-logo"
+        />
       </div>
       <div className=" items-center space-x-20 hidden md:flex ">
         {navBaritems?.map((item) => (

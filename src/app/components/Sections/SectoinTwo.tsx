@@ -30,12 +30,12 @@ function SectoinTwo() {
         <p className="w-[85%] h-auto md:w-full md:h-full text-[30px] md:text-5xl font-extrabold text-center md:p-0">
           {width > breakpoint ? (
             <>
-              "Discover the vibrant colours of our <br /> sneaker—find the
+              "Discover the vibrant colours of our <br /> sneakers—find the
               perfect pair to <br /> express your style!"
             </>
           ) : (
             <>
-              "Discover the vibrant colours of our sneaker—find the perfect pair
+              "Discover the vibrant colours of our sneakers—find the perfect pair
               to express your style!"
             </>
           )}
