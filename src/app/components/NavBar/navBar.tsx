@@ -10,10 +10,10 @@ const navBaritems = [
 function NavBar() {
   return (
     <div className="w-full h-[72px] flex relative items-center  md:px-16 md:justify-around ">
-      <div className="w-[100px] h-[65px] relative mt-[9px]">
+      <div className="w-[100px] h-full relative ">
         <Image src="/assets/BrandLogo.jpeg" fill={true} alt="brand-logo" />
       </div>
-      <div className="w-[150px] h-[70px] relative mt-[10px]">
+      <div className="w-[180px] h-[70px] relative ml-[38px] ">
       <Image src="/assets/brandNameImage.png" fill={true} alt="brand-name-logo" />
 
       </div>
