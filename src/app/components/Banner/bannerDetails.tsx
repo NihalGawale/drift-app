@@ -1,4 +1,4 @@
-import { anton, bebasNeue, roboto } from "@/app/Theme/Fonts/Fonts";
+import { roboto } from "@/app/Theme/Fonts/Fonts";
 import Button from "@/app/Theme/UI/Button";
 import OutlinedButton from "@/app/Theme/UI/OutlinedButton";
 import React from "react";
@@ -25,7 +25,7 @@ function BannerDetails({ width, breakpoint }: BannerDetailsProps) {
         </p>
       </div>
 
-      <div className=" flex flex-row gap-x-4">
+      {/* <div className=" flex flex-row gap-x-4">
         <Button
           buttonText="SHOP THE DROP"
           bgColour={width > breakpoint ? "black" : "white"}
@@ -35,7 +35,7 @@ function BannerDetails({ width, breakpoint }: BannerDetailsProps) {
           showArrow={false}
           showOutline={true}
         />
-      </div>
+      </div> */}
     </div>
   );
 }

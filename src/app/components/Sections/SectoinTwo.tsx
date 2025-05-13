@@ -27,7 +27,7 @@ function SectoinTwo() {
       style={{ backgroundColor: Themes.sectionGrayColour }}
     >
       <div className="w-full md:w-[60%] md:h-[144px] flex justify-center">
-        <p className="w-[335px] h-[136px] md:w-full md:h-full text-[25px] md:text-5xl font-extrabold pl-6 md:p-0">
+        <p className="w-[85%] h-auto md:w-full md:h-full text-[30px] md:text-5xl font-extrabold text-center md:p-0">
           {width > breakpoint ? (
             <>
               "Discover the vibrant colours of our <br /> sneaker—find the
@@ -35,7 +35,7 @@ function SectoinTwo() {
             </>
           ) : (
             <>
-              "Discover the vibrant colours of oursneaker—find the perfect pair
+              "Discover the vibrant colours of our sneaker—find the perfect pair
               to express your style!"
             </>
           )}

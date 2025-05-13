@@ -11,7 +11,7 @@ function SectionThree() {
       <div className="w-full h-[367px] flex items-center md:w-[50%] md:h-auto] ">
         <div className=" w-full h-full md:h-[328px] flex flex-col gap-y-5 md:gap-y-8 justify-center align-middle">
           <p className="text-4xl md:text-5xl font-extrabold">
-            White & Beige <br /> Morning Brew
+            MOCHA MIST
           </p>
           <p className="font-normal tracking-wide">
             Like the comfort of your favourite café, these tones feel familiar
