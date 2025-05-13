@@ -5,6 +5,7 @@ import Image from "next/image";
 import React from "react";
 
 function SectionFive() {
+  const id = "product3";
   return (
     <SectionLayout>
       <div className=" w-full h-[367px] flex items-center md:w-[50%] md:h-auto]">
@@ -25,6 +26,7 @@ function SectionFive() {
               showOutline={true}
             />
             <OutlinedButton
+              id={id}
               buttonText="EXPLORE"
               showArrow={true}
               showOutline={false}
