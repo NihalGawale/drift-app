@@ -26,14 +26,18 @@ function Banner() {
   return (
     <div className="md:relative w-full h-[950px]  md:h-[900px]  flex flex-col md:flex-none md:justify-start md:items-start ">
       <div className="w-full h-[600] md:h-full relative">
-        {width > breakpoint ? (
-          <Image src="/assets/bannerImage.png" alt="sneaker2" fill={true} />
-        ) : (
-          <video width="100%" height="auto" controls autoPlay muted loop>
-            <source src="/videos/bannerImageVideo.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        )}
+        <video
+          src="/videos/bannerImageVideo.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          style={{
+            width: "100%",
+            height: "auto",
+            objectFit: "cover",
+          }}
+        />
       </div>
       <div className="md:absolute md:mt-52 w-full h-[350px] md:w-[70%] md:z-10 md:flex md:justify-center">
         <BannerDetails width={width} breakpoint={breakpoint} />
