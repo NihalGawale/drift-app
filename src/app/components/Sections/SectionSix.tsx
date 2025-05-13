@@ -52,7 +52,7 @@ function SectionSix() {
           </p>
           <div className=" flex flex-row gap-x-4">
             <OutlinedButton
-              buttonText="BUY NOW"
+              buttonText="PRE ORDER"
               showArrow={false}
               showOutline={true}
             />
