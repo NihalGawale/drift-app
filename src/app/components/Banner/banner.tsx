@@ -26,14 +26,17 @@ function Banner() {
   return (
     <div className="md:relative w-full h-[950px]  md:h-[900px]  flex flex-col md:flex-none md:justify-start md:items-start ">
       <div className="w-full h-[600] md:h-full relative">
-        <Image
-          src={
-            width > breakpoint
-              ? "/assets/bannerImage.png"
-              : "/assets/mobileBannerImg.png"
-          }
-          alt="sneaker2"
-          fill={true}
+        <video
+          src="/videos/bannerImageVideo.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          style={{
+            width: "100%",
+            height: "auto",
+            objectFit: "cover",
+          }}
         />
       </div>
       <div className="md:absolute md:mt-52 w-full h-[350px] md:w-[70%] md:z-10 md:flex md:justify-center">
