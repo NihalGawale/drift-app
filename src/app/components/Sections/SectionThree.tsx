@@ -3,16 +3,16 @@ import Button from "@/app/Theme/UI/Button";
 import OutlinedButton from "@/app/Theme/UI/OutlinedButton";
 import SectionLayout from "@/app/Theme/UI/SectionLayout";
 import Image from "next/image";
-import React from "react";
+import React, { useId } from "react";
 
 function SectionThree() {
+  const id = "product1";
+
   return (
     <SectionLayout>
       <div className="w-full h-[367px] flex items-center md:w-[50%] md:h-auto] ">
         <div className=" w-full h-full md:h-[328px] flex flex-col gap-y-5 md:gap-y-8 justify-center align-middle">
-          <p className="text-4xl md:text-5xl font-extrabold">
-            MOCHA MIST
-          </p>
+          <p className="text-4xl md:text-5xl font-extrabold">MOCHA MIST</p>
           <p className="font-normal tracking-wide">
             Like the comfort of your favourite café, these tones feel familiar
             yet special. <br />
@@ -28,6 +28,7 @@ function SectionThree() {
               showOutline={true}
             />
             <OutlinedButton
+              id={id}
               buttonText="EXPLORE"
               showArrow={true}
               showOutline={false}

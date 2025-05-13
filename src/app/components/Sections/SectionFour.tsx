@@ -8,7 +8,7 @@ import React, { useEffect, useState } from "react";
 
 function SectionFour() {
   const [width, setWidth] = useState<number | null>(null);
-
+  const id = "product2";
   useEffect(() => {
     function updateWidth() {
       setWidth(window.innerWidth);
@@ -24,6 +24,7 @@ function SectionFour() {
 
   // ✅ Only render layout *after* width is set (i.e. on client)
   if (width === null) return null;
+
   return (
     <SectionLayout>
       {width > breakpoint && (
@@ -57,6 +58,7 @@ function SectionFour() {
               showOutline={true}
             />
             <OutlinedButton
+              id={id}
               buttonText="EXPLORE"
               showArrow={true}
               showOutline={false}
