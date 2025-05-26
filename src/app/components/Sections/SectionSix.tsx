@@ -8,7 +8,7 @@ import React, { useEffect, useState } from "react";
 
 function SectionSix() {
   const [width, setWidth] = useState<number | null>(null);
-
+  const id = "product4";
   useEffect(() => {
     function updateWidth() {
       setWidth(window.innerWidth);
@@ -57,6 +57,7 @@ function SectionSix() {
               showOutline={true}
             />
             <OutlinedButton
+              id={id}
               buttonText="EXPLORE"
               showArrow={true}
               showOutline={false}

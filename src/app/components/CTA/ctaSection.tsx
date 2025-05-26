@@ -25,7 +25,7 @@ function CTASection() {
   if (width === null) return null;
   return (
     <SectionLayout>
-      <div className="w-full h-[690px] md:w-[1200px] md:h-[462px] flex flex-col md:flex-row">
+      <div className="w-full h-[690px] md:w-[1200px] md:h-[462px] flex flex-col md:flex-row border-4 ">
         <div className="w-full h-[406pxpx] md:w-[700px] md:h-full bg-white flex flex-col  md:justify-center items-center">
           <div className="w-full h-[406px] md:h-[377px] md:p-12 flex flex-col  gap-y-8 items-center md:items-start p-8">
             <div className="w-[271px] md:w-full flex flex-col gap-y-4">
