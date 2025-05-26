@@ -24,7 +24,7 @@ function Banner() {
   // ✅ Only render layout *after* width is set (i.e. on client)
   if (width === null) return null;
   return (
-    <div className="md:relative w-full h-[950px]  md:h-[900px]  flex flex-col md:flex-none md:justify-start md:items-start ">
+    <div className="md:relative w-full h-[950px]  md:h-[850px]  flex flex-col md:flex-none md:justify-start md:items-start ">
       <div className="w-full h-[600] md:h-full relative">
         {width > breakpoint ? (
           <Image src="/assets/bannerImage.png" alt="sneaker2" fill={true} />

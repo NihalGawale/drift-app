@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import { Arrow } from "../Icons/Arrow";
 import { useRouter } from "next/navigation";
+import { ArrowIcon } from "../Icons/Icons";
 
 interface OutlinedButtonProps {
   id?: string;
@@ -27,7 +27,7 @@ function OutlinedButton({
       onClick={() => router.push(`/products/${id}`)}
     >
       {buttonText}
-      {showArrow && <Arrow />}
+      {showArrow && <ArrowIcon />}
     </button>
   );
 }

@@ -1,3 +1,11 @@
+import { contactLeftConstants, navBarItems } from "@/app/constants/constant";
+import {
+  FacebookIcon,
+  InstagramIcon,
+  TermsPolicyDot,
+  TwitterIcon,
+} from "@/app/Theme/Icons/Icons";
+import Image from "next/image";
 import React from "react";
 
 const footerConstantsOne = [
@@ -7,17 +15,54 @@ const footerConstantsOne = [
   { key: "cookies", value: "Cookies Settings" },
 ];
 
+const rightsReserved = "Copyright 2025 © Drift, All Rights Reserved";
 function Footer() {
   return (
-    <div className="px-5 py-16 md:px-16 md:py-20">
-      <div className="w-full h-[357px] md:h-[36px] flex flex-col md:flex-row md:justify-end gap-y-16 md:gap-0">
-        <div className=" flex justify-center">
-          <p>LOGO</p>
+    <div className="w-full h-[460px] bg-black flex justify-center items-center text-white">
+      <div className="w-[80%] h-[80%] ">
+        <div className="h-[80%] flex border-b-1 border-[#434343]">
+          <div className="w-1/3 h-full flex">
+            <div className="w-[80px] h-[60px] relative">
+              <Image
+                src="/assets/BrandLogo.jpeg"
+                alt="drift-brand-image"
+                fill={true}
+              />
+            </div>
+            {/* <div className="w-[100px] h-[40px] relative">
+          <Image
+              src="/assets/brandNameLogo.png"
+              alt="drift-brand-image"
+              fill={true}
+            />
+          </div> */}
+          </div>
+          <div className="w-1/3 h-full">
+            <div className="flex flex-col gap-y-8 max-w-[70%]">
+              {contactLeftConstants.map((item) => (
+                <div key={item.key} className="flex gap-x-4">
+                  <div>{item.icon}</div>
+                  <div>{item.contact}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="w-1/3 h-full text-xl flex flex-col gap-y-10 items-center">
+            {navBarItems.map((item) => (
+              <div key={item.id}>{item.value}</div>
+            ))}
+          </div>
         </div>
-        <div className=" w-full flex flex-col md:flex-row justify-center items-center gap-y-10 md:gap-x-6 font-normal tracking-wide">
-          {footerConstantsOne.map((item) => (
-            <div key={item.key}>{item.value}</div>
-          ))}
+        <div className="w-full h-[20%] flex items-center">
+          <div className="w-1/3">{rightsReserved}</div>
+          <div className="w-1/3 flex gap-x-10 justify-center">
+            <FacebookIcon />
+            <InstagramIcon />
+            <TwitterIcon />
+          </div>
+          <div className="w-1/3 flex items-center justify-end gap-x-2">
+            Terms & Conditions <TermsPolicyDot /> Privacy Policy
+          </div>
         </div>
       </div>
     </div>

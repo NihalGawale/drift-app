@@ -11,23 +11,32 @@ import CustomerTestimonial from "./components/CustomerTestimonial/CustomerTestim
 import CTASection from "./components/CTA/ctaSection";
 import ContactSection from "./components/Contact/ContactSection";
 import Footer from "./components/Footer/Footer";
+import ProductSection from "./components/Products/ProductSection";
+import AboutUs from "./components/AboutUs/aboutUs";
+import CoreValues from "./components/CoreValues/coreValues";
+import FAQ from "./components/FAQ/faq";
 
 function App() {
   return (
-    <>
+    <div className="w-full relative flex flex-col justify-center ">
       <NavBar />
       <Banner />
-      <SectionOne />
+      <ProductSection />
+      <AboutUs />
+      <CoreValues />
+      <CustomerTestimonial />
+      <CTASection />
+      <ContactSection />
+      <FAQ />
+      <Footer />
+      {/*  <SectionOne />
       <SectoinTwo />
       <SectionThree />
       <SectionFour />
       <SectionFive />
       <SectionSix />
-      <CustomerTestimonial />
-      <CTASection />
-      <ContactSection />
-      <Footer />
-    </>
+       */}
+    </div>
   );
 }
 

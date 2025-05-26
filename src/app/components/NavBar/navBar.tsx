@@ -1,40 +1,56 @@
-import Button from "@/app/Theme/UI/Button";
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
+import Button from "../UI/Button/Button";
+import SignUpButton from "../UI/Button/SignUpButton";
+import { navBarItems, signInButtons } from "@/app/constants/constant";
+import { animateScroll as scroll } from "react-scroll";
 
-const navBaritems = [
-  { key: "home", value: "Home" },
-  { key: "about", value: "About" },
-  { key: "newDrops", value: "New Drops" },
-];
 function NavBar() {
-  return (
-    <div className="w-full h-[72px] flex relative items-center md:ml-0 md:px-16 md:justify-around pl-4">
-      <div className="w-[90px] h-[70px] relative ">
-        <Image src="/assets/BrandLogo.jpeg" fill={true} alt="brand-logo" />
-      </div>
-      <div className="w-[150px] h-[60px] relative ml-[15px]  ">
-        <Image
-          src="/assets/brandNameImage.png"
-          fill={true}
-          alt="brand-name-logo"
-        />
-      </div>
-      <div className=" items-center space-x-20 hidden md:flex ">
-        {navBaritems?.map((item) => (
-          <div key={item?.key}>{item?.value}</div>
-        ))}
-      </div>
+  const [navLink, setNavLink] = useState(navBarItems);
 
-      {/* Temporarily commented the button */}
-      {/* <div className="flex items-center">
-        <button
-          type="button"
-          className="bg-white text-black md:px-10 md:py-[15px] font-semibold text-sm px-6 py-2 font-roboto flex justify-center items-center"
+  const handleOnClickNavLink = (navLinkId: string | undefined) => {
+    const updatedNavLinks = navLink.map((item) => ({
+      ...item,
+      isClicked: item.id === navLinkId, // set true only for clicked item
+    }));
+    setNavLink(updatedNavLinks);
+  };
+
+  return (
+    <div className="w-full flex justify-center z-50 top-1 fixed ">
+      <div className="w-[90%] h-20 mt-6 bg-[#F2F1EDB8] backdrop-blur-[5px] shadow-[1px_4px_12px_0px_rgba(0,0,0,0.16)] rounded-full flex justify-between items-center px-12 py-3">
+        <div
+          onClick={() => scroll.scrollToTop({ duration: 500, smooth: true })}
         >
-          SHOP
-        </button>
-      </div> */}
+          Brand logo and Name
+        </div>
+        <div className="w-[60%] 2xl:w-[40%] h-10 flex items-center justify-center gap-x-6 xl:gap-x-12">
+          {navLink?.map((item) => (
+            <div key={item.id} className="w-[16%] ">
+              <Button
+                id={item?.id}
+                buttonText={item?.value}
+                isClicked={item.isClicked}
+                offset={item?.offset}
+                handleOnClickNavLink={handleOnClickNavLink}
+              />
+            </div>
+          ))}
+        </div>
+        <div className="w-[10%] h-10 flex items-center justify-between">
+          {signInButtons?.map((item) => (
+            <div key={item.id}>
+              <SignUpButton
+                id={item?.id}
+                buttonText={item?.value}
+                isRing={item?.isRing}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

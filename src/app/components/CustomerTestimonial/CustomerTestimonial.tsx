@@ -59,7 +59,7 @@ function CustomerTestimonial({ rating = 4 }) {
           <div
             key={i}
             className={`w-2 h-2 rounded-full transition-all ${
-              i === current ? "bg-white scale-125" : "bg-gray-500 opacity-50"
+              i === current ? "bg-black scale-125" : "bg-gray-600 opacity-50"
             }`}
           />
         ))}
@@ -69,8 +69,8 @@ function CustomerTestimonial({ rating = 4 }) {
 
   return (
     <div
-      className="w-full h-[800px] md:h-[864px] flex justify-center items-center relative"
-      style={{ backgroundColor: Themes.sectionGrayColour }}
+      className="w-full h-[800px] md:h-[864px] flex justify-center items-center relative text-black"
+      // style={{ backgroundColor: Themes.sectionGrayColour }}
     >
       <div className="w-[80%] md:w-[70%] h-[660px] md:h-[640px] relative">
         <div className="flex flex-col gap-y-16">
