@@ -20,7 +20,7 @@ function App() {
       <ProductSection />
       <AboutUs />
       <CoreValues />
-      <CustomerTestimonial />
+      {/* <CustomerTestimonial /> */}
       <CTASection />
       <ContactSection />
       <FAQ />

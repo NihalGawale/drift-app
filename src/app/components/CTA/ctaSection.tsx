@@ -40,7 +40,7 @@ function CTASection() {
         <div className="w-full h-[406pxpx] md:w-[700px] md:h-full bg-white flex flex-col  md:justify-center items-center">
           <div className="w-full h-[406px] md:h-[377px] md:p-12 flex flex-col  gap-y-8 items-center md:items-start p-8">
             <div className="w-[271px] md:w-full flex flex-col gap-y-4">
-              <p className="text-[42px]/12 md:text-5xl text-black font-black ">
+              <p className="text-[42px] md:text-5xl text-black font-bold">
                 {width > breakpoint ? (
                   <>
                     Join the club of <br /> #Drifters
@@ -52,7 +52,7 @@ function CTASection() {
                   </>
                 )}
               </p>
-              <p className="text-black font-medium">
+              <p className="text-black font-extrabold tracking-wide">
                 Be First to Know — our latest trends and exclusive offers!
               </p>
             </div>
@@ -62,7 +62,7 @@ function CTASection() {
                   onChange={(e) => {
                     setUserEMail(e.target.value);
                   }}
-                  className=" w-full h-[48px] border-2 border-black text-gray-500 p-3 mb-1"
+                  className=" w-full h-[48px] border-2 border-black text-gray-500 p-3 mb-1 font-extrabold tracking-wide"
                   placeholder="Your Email Here"
                 />
                 {!isUserEmailValid && (
@@ -73,7 +73,7 @@ function CTASection() {
               </div>
               <button
                 type="button"
-                className="w-full h-[48px]  md:w-[30%] bg-black text-white md:px-6 md:py-[15px] font-semibold text-sm px-6 py-4 font-roboto flex justify-center items-center cursor-pointer"
+                className="w-full h-[48px]  md:w-[30%] bg-black text-white md:px-6 md:py-[15px] font-extrabold text-sm px-6 py-4 font-roboto flex justify-center items-center cursor-pointer tracking-wider"
                 onClick={handleOnSubmit}
               >
                 Join Now

@@ -21,7 +21,7 @@ function Button({
         key={id}
         className={`${
           isClicked ? "bg-black text-white" : ""
-        } py-[10px] px-4 rounded-full text-[16px] font-medium cursor-pointer`}
+        } py-[10px] px-4 rounded-full text-[16px] font-extrabold cursor-pointer`}
         onClick={() => handleOnClickNavLink(id)}
       >
         {buttonText}
