@@ -7,10 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        roboto: ["var(--font-roboto-mono)"],
-        sans: ["var(--font-inter)", "sans-serif"],
-        pop: ["var(--font-poppins)", "sans-serif"],
-        anton: ["var(--font-anton)", "sans-serif"],
+        sans: ["HelveticaCustom", "sans-serif"],
       },
     },
   },

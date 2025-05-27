@@ -96,15 +96,15 @@ function ContactSection() {
         />
       </div>
       <div className="w-[70%] h-[80%] z-30 absolute flex justify-between ">
-        <p className="text-7xl">Contact Us</p>
+        <p className="text-7xl font-bold tracking-wide">Contact Us</p>
         <div className="w-[800px] h-full flex opacity-100 text-white">
           <div className="w-[350px] h-full flex justify-center pt-10 bg-[#000000B8] rounded-l-lg">
             <div className="w-[80%] h-[70%] flex flex-col gap-y-20">
               <div className="flex flex-col gap-y-9">
-                <p className="font-bold">Contact Information</p>
+                <p className="font-bold tracking-wide">Contact Information</p>
                 <div className="flex flex-col gap-y-9">
                   {contactLeftConstants.map((item) => (
-                    <div key={item.key} className="flex gap-x-4">
+                    <div key={item.key} className="flex text-sm gap-x-2 font-semibold">
                       <div>{item.icon}</div>
                       <div>{item.contact}</div>
                     </div>
@@ -120,20 +120,20 @@ function ContactSection() {
           </div>
           <div className="w-[450px] h-full bg-[#FFFFFFCC] opacity-80 rounded-r-lg flex justify-center pt-10 text-black">
             <div className="w-[80%] h-[70%] flex flex-col gap-y-8">
-              <p className="font-bold">Send Us a Message</p>
+              <p className="font-bold ">Send Us a Message</p>
               <div className="flex flex-col gap-y-2">
                 <div className="flex gap-x-6">
                   <input
                     key="firstName"
                     required={true}
-                    className="border-1 py-2.5 px-4 w-1/2 rounded-full"
+                    className="border-1 py-2.5 px-4 w-1/2 rounded-full font-semibold text-sm"
                     placeholder="First Name*"
                     onChange={(e) => handleOnChange(e, "firstName")}
                   />
                   <input
                     key="lastName"
                     required={true}
-                    className="border-1 py-2.5 px-4 w-1/2 rounded-full"
+                    className="border-1 py-2.5 px-4 w-1/2 rounded-full font-semibold text-sm"
                     placeholder="Last Name*"
                     onChange={(e) => handleOnChange(e, "lastName")}
                   />
@@ -168,7 +168,7 @@ function ContactSection() {
                       <input
                         className={` ${
                           item.key === "message" ? "pb-20 rounded-xl" : ""
-                        } border-1 py-2.5 px-10 w-full rounded-full mb-2`}
+                        } border-1 py-2.5 px-10 w-full rounded-full font-semibold text-sm mb-2`}
                         placeholder={item.value}
                         required={item.isRequired}
                         value={userMessage[item.key]}

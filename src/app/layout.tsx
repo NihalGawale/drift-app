@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { roboto } from "./Theme/Fonts/Fonts";
+import { inter, roboto } from "./Theme/Fonts/Fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto.className}  antialiased`}>{children}</body>
+      <body className={` antialiased`}>{children}</body>
     </html>
   );
 }

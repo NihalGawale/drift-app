@@ -45,7 +45,7 @@ const FAQ = () => {
       className="w-full min-h-[872px] max-h-auto  relative  px-[84px] py-[60px]"
     >
       <div className="w-[60%] h-full flex flex-col gap-y-20">
-        <h2 className="text-7xl font-bold mb-6">FAQ’s</h2>
+        <h2 className="text-7xl font-bold mb-6 tracking-wide">FAQ’s</h2>
         <div className="space-y-4 divide-y divide-black ">
           {faqs.map((faq, idx) => (
             <Disclosure
@@ -61,7 +61,7 @@ const FAQ = () => {
                     className="group flex w-full items-center justify-between"
                     onClick={() => setOpenIndex(open ? null : idx)}
                   >
-                    <span className="text-2xl font-semibold">
+                    <span className="text-2xl font-bold">
                       {faq.question}
                     </span>
                     {open ? <MinusIcon /> : <PlusIcon />}
@@ -69,7 +69,7 @@ const FAQ = () => {
                   {open && (
                     <DisclosurePanel
                       transition
-                      className="mt-2 text-lg max-w-[80%] leading-8 text-black  transition duration-400 ease-out data-closed:-translate-y-6 data-closed:opacity-0"
+                      className="mt-2 text-base max-w-[80%] leading-8 text-[#4B4B4B]  transition duration-400 ease-out data-closed:-translate-y-6 data-closed:opacity-0 font-semibold"
                     >
                       {faq.answer}
                     </DisclosurePanel>
