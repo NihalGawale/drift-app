@@ -1,4 +1,7 @@
+"use client";
+
 import ProductCard from "@/app/components/UI/ProductCard/ProductCard";
+import Button from "@/app/Theme/UI/Button";
 import React from "react";
 
 function ProductSection() {
@@ -27,6 +30,11 @@ function ProductSection() {
           <ProductCard />
           <ProductCard />
           <ProductCard />
+        </div>
+        <div className="w-full flex justify-center mt-10">
+          <button className=" bg-black text-white hover:bg-white hover:text-black shadow-xl font-semibold text-lg px-8 py-4 font-roboto flex items-center justify-center rounded-full gap-x-3 cursor-pointer">
+            View All Products
+          </button>
         </div>
       </div>
     </div>

@@ -1,4 +1,11 @@
-import { EmailIcon, LocationIcon, PhoneIcon } from "../Theme/Icons/Icons";
+import {
+  CommunityMindestIcon,
+  CustomerFirstIcon,
+  EmailIcon,
+  LocationIcon,
+  PhoneIcon,
+  TrustIcon,
+} from "../Theme/Icons/Icons";
 
 export const navBarItems = [
   { id: "products", value: "Products", isClicked: false },
@@ -40,16 +47,45 @@ export const contactLeftConstants = [
 export const contactRightConstants = [
   {
     key: "email",
-    value: "Email",
+    isRequired: true,
+    value: "Email*",
     icon: <EmailIcon fill="black" />,
   },
   {
-    key: "phone-no",
-    value: "Phone Number",
+    key: "phoneNumber",
+    isRequired: true,
+    value: "Phone Number*",
     icon: <PhoneIcon fill="black" />,
   },
   {
     key: "message",
-    value: "How can I help you?",
+    isRequired: true,
+    value: "How can I help you?*",
+  },
+];
+
+export const coreValuesConst = [
+  {
+    id: "trust",
+    icon: <TrustIcon />,
+    title: "Trust",
+    description: `We don’t take trust for granted — we earn it. From quality
+                  craftsmanship to honest service, everything we do is built on
+                  reliability and consistency.`,
+  },
+  {
+    id: "customer-first",
+    icon: <CustomerFirstIcon />,
+    title: "Customers Come First",
+    description: ` You’re not just buying sneakers — you’re joining a movement. We
+                design with your comfort, style, and feedback in mind. Always.`,
+  },
+  {
+    id: "community-mindset",
+    icon: <CommunityMindestIcon />,
+    title: "Community-First Mindset",
+    description: `We move as one. Drift is more than a brand — it’s a shared space
+                for creators, explorers, and everyday rebels who lift each other
+                up.`,
   },
 ];

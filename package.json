@@ -10,12 +10,14 @@
   },
   "dependencies": {
     "@headlessui/react": "^2.2.4",
+    "framer-motion": "^12.14.0",
     "next": "15.3.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-image-gallery": "^1.4.0",
     "react-photo-view": "^1.2.7",
     "react-scroll": "^1.9.3",
+    "react-toastify": "^11.0.5",
     "styled-components": "^6.1.18"
   },
   "devDependencies": {
