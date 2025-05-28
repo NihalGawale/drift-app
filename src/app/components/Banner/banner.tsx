@@ -43,7 +43,7 @@ function Banner() {
           />
         )}
       </div>
-      <div className="md:absolute bottom-[168px] left-[150px] w-full h-[350px] md:w-[70%] md:z-10 md:flex md:justify-start">
+      <div className="md:absolute bottom-[168px] left-[190px] w-full h-[350px] md:w-[70%] md:z-10 md:flex md:justify-start">
         <BannerDetails width={width} breakpoint={breakpoint} />
       </div>
     </div>

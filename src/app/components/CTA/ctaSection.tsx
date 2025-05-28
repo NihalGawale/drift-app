@@ -36,11 +36,11 @@ function CTASection() {
 
   return (
     <SectionLayout>
-      <div className="w-full h-[690px] md:w-[1200px] md:h-[462px] flex flex-col md:flex-row border-4 ">
-        <div className="w-full h-[406pxpx] md:w-[700px] md:h-full bg-white flex flex-col  md:justify-center items-center">
-          <div className="w-full h-[406px] md:h-[377px] md:p-12 flex flex-col  gap-y-8 items-center md:items-start p-8">
-            <div className="w-[271px] md:w-full flex flex-col gap-y-4">
-              <p className="text-[42px] md:text-5xl text-black font-bold">
+      <div className="w-full h-[690px]  md:h-full flex flex-col md:flex-row">
+        <div className="w-full h-full md:h-full bg-white flex flex-col md:justify-center items-center">
+          <div className="w-full h-full md:h-full md:p-12 flex flex-col gap-y-8 items-start justify-center ml-72">
+            <div className="w-auto flex flex-col gap-y-4">
+              <p className="text-[80px] leading-[90px] text-black font-black">
                 {width > breakpoint ? (
                   <>
                     Join the club of <br /> #Drifters
@@ -52,7 +52,7 @@ function CTASection() {
                   </>
                 )}
               </p>
-              <p className="text-black font-extrabold tracking-wide">
+              <p className="text-black font-bold tracking text-lg">
                 Be First to Know — our latest trends and exclusive offers!
               </p>
             </div>
@@ -62,7 +62,8 @@ function CTASection() {
                   onChange={(e) => {
                     setUserEMail(e.target.value);
                   }}
-                  className=" w-full h-[48px] border-2 border-black text-gray-500 p-3 mb-1 font-extrabold tracking-wide"
+                  className=" w-full h-[48px] border-1 border-black text-gray-500 py-3 px-5 mb-1 font-
+                  bold tracking-wide rounded-full"
                   placeholder="Your Email Here"
                 />
                 {!isUserEmailValid && (
@@ -73,7 +74,8 @@ function CTASection() {
               </div>
               <button
                 type="button"
-                className="w-full h-[48px]  md:w-[30%] bg-black text-white md:px-6 md:py-[15px] font-extrabold text-sm px-6 py-4 font-roboto flex justify-center items-center cursor-pointer tracking-wider"
+                className="w-full h-[48px]  md:w-[30%] bg-black text-white md:px-6 md:py-[15px] font-
+                bold text-base px-6 py-4 flex justify-center items-center cursor-pointer rounded-full"
                 onClick={handleOnSubmit}
               >
                 Join Now
@@ -81,7 +83,7 @@ function CTASection() {
             </div>
           </div>
         </div>
-        <div className=" relative w-full md:w-[500px] h-[300px] md:h-full">
+        <div className=" relative w-full md:w-[1200px] h-full">
           <Image src="/assets/DRIFTERS.png" fill={true} alt="cta-image" />
         </div>
       </div>
