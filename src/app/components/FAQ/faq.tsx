@@ -42,9 +42,11 @@ const FAQ = () => {
   return (
     <Element
       name="faq"
-      className="w-full min-h-[872px] max-h-auto  relative  px-[84px] py-[60px]"
+      className="w-full min-h-[872px] max-h-auto  relative flex justify-center py-[60px]"
     >
-      <div className="w-[60%] h-full flex flex-col gap-y-20">
+      <div className="w-[80%] h-full flex flex-col gap-y-20">
+        <div className="w-[60%]">
+
         <h2 className="text-7xl font-bold mb-6 tracking-wide">FAQ’s</h2>
         <div className="space-y-4 divide-y divide-black ">
           {faqs.map((faq, idx) => (
@@ -69,7 +71,7 @@ const FAQ = () => {
                   {open && (
                     <DisclosurePanel
                       transition
-                      className="mt-2 text-base max-w-[80%] leading-8 text-[#4B4B4B]  transition duration-400 ease-out data-closed:-translate-y-6 data-closed:opacity-0 font-semibold"
+                      className="mt-2 text-lg max-w-[80%] leading-8 text-[#4B4B4B]  transition duration-400 ease-out data-closed:-translate-y-6 data-closed:opacity-0 font-semibold"
                     >
                       {faq.answer}
                     </DisclosurePanel>
@@ -78,6 +80,7 @@ const FAQ = () => {
               )}
             </Disclosure>
           ))}
+        </div>
         </div>
       </div>
     </Element>

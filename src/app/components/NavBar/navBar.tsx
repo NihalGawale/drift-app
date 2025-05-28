@@ -24,8 +24,8 @@ function NavBar() {
   };
 
   return (
-    <div className="w-full flex justify-center z-50 top-1 fixed font-extrabold">
-      <div className="w-[90%] h-20 mt-6 bg-[#F2F1EDB8] backdrop-blur-[5px] shadow-[1px_4px_12px_0px_rgba(0,0,0,0.16)] rounded-full flex justify-between items-center px-12 py-3">
+    <div className="w-full flex justify-center z-50 top-1 fixed font-bold">
+      <div className="w-[80%] h-20 mt-6 bg-[#F2F1EDB8] backdrop-blur-[5px] shadow-[1px_4px_12px_0px_rgba(0,0,0,0.16)] rounded-full flex justify-between items-center px-12 py-3 text-lg">
         <div
           onClick={() => scroll.scrollToTop({ duration: 500, smooth: true })}
         >
@@ -44,7 +44,7 @@ function NavBar() {
             </div>
           ))}
         </div>
-        <div className="w-[20%] h-10 flex items-center gap-x-4 justify-end">
+        <div className="w-[15%] h-10 flex items-center gap-x-4 justify-end">
           {signInButtons?.map((item) => (
             <div key={item.id}>
               <SignUpButton

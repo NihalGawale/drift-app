@@ -11,7 +11,7 @@ function SignUpButton({ id, buttonText, isRing }: SignUpButtonProps) {
       key={id}
       className={`${
         isRing ? "ring-1 ring-black" : ""
-      } py-[10px] px-4  rounded-full text-[16px] text-black cursor-pointer font-extrabold`}
+      } py-[10px] px-4  rounded-full text-[17px] text-black cursor-pointer font-semibold`}
     >
       {buttonText}
     </button>

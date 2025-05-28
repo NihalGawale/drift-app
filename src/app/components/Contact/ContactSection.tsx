@@ -95,18 +95,18 @@ function ContactSection() {
           }}
         />
       </div>
-      <div className="w-[70%] h-[80%] z-30 absolute flex justify-between ">
-        <p className="text-7xl font-bold tracking-wide">Contact Us</p>
-        <div className="w-[800px] h-full flex opacity-100 text-white">
+      <div className="w-[80%] h-auto z-30 absolute flex justify-between ">
+        <p className="text-7xl font-black ">Contact Us</p>
+        <div className="w-[800px] h-auto flex opacity-100 text-white">
           <div className="w-[350px] h-full flex justify-center pt-10 bg-[#000000B8] rounded-l-lg">
             <div className="w-[80%] h-[70%] flex flex-col gap-y-20">
               <div className="flex flex-col gap-y-9">
-                <p className="font-bold tracking-wide">Contact Information</p>
+                <p className="font-semibold text-lg">Contact Information</p>
                 <div className="flex flex-col gap-y-9">
                   {contactLeftConstants.map((item) => (
-                    <div key={item.key} className="flex text-sm gap-x-2 font-semibold">
+                    <div key={item.key} className="flex text-base gap-x-2 font-semibold tracking-normal">
                       <div>{item.icon}</div>
-                      <div>{item.contact}</div>
+                      <div className="-mt-0.5">{item.contact}</div>
                     </div>
                   ))}
                 </div>
@@ -118,38 +118,37 @@ function ContactSection() {
               </div>
             </div>
           </div>
-          <div className="w-[450px] h-full bg-[#FFFFFFCC] opacity-80 rounded-r-lg flex justify-center pt-10 text-black">
-            <div className="w-[80%] h-[70%] flex flex-col gap-y-8">
-              <p className="font-bold ">Send Us a Message</p>
+          <div className="w-[450px] h-full bg-[#FFFFFFCC] opacity-80 rounded-r-lg flex justify-center py-10 text-black">
+            <div className="w-[80%] h-auto flex flex-col gap-y-8">
+              <p className="font-semibold text-lg">Send Us a Message</p>
               <div className="flex flex-col gap-y-2">
                 <div className="flex gap-x-6">
                   <input
                     key="firstName"
                     required={true}
-                    className="border-1 py-2.5 px-4 w-1/2 rounded-full font-semibold text-sm"
+                    className="border-1 py-2.5 px-4 w-1/2 rounded-lg font-semibold text-base"
                     placeholder="First Name*"
                     onChange={(e) => handleOnChange(e, "firstName")}
                   />
                   <input
                     key="lastName"
                     required={true}
-                    className="border-1 py-2.5 px-4 w-1/2 rounded-full font-semibold text-sm"
+                    className="border-1 py-2.5 px-4 w-1/2 rounded-lg font-semibold text-base"
                     placeholder="Last Name*"
                     onChange={(e) => handleOnChange(e, "lastName")}
                   />
                 </div>
                 {(formErrors["firstName"] && (
-                  <p className="text-red-600 text-sm">
+                  <p className="text-red-600 text-base font-medium">
                     {formErrors["firstName"]}
                   </p>
                 )) ||
                   (formErrors["lastName"] && (
-                    <p className="text-red-600 text-sm">
+                    <p className="text-red-600 text-base font-medium">
                       {formErrors["lastName"]}
                     </p>
                   ))}
               </div>
-
               {contactRightConstants.map((item) => (
                 <>
                   <div key={item.key} className="w-full relative">
@@ -167,8 +166,8 @@ function ContactSection() {
                       )}
                       <input
                         className={` ${
-                          item.key === "message" ? "pb-20 rounded-xl" : ""
-                        } border-1 py-2.5 px-10 w-full rounded-full font-semibold text-sm mb-2`}
+                          item.key === "message" ? "pb-20 rounded-lg" : ""
+                        } border-1 py-2.5 px-10 w-full rounded-lg font-semibold text-base mb-2`}
                         placeholder={item.value}
                         required={item.isRequired}
                         value={userMessage[item.key]}
@@ -176,7 +175,7 @@ function ContactSection() {
                       />
                     </>
                     {formErrors[item.key] && (
-                      <p className="text-red-600 text-sm">
+                      <p className="text-red-600 text-sm font-medium">
                         {formErrors[item.key]}
                       </p>
                     )}
