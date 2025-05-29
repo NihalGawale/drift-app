@@ -27,7 +27,7 @@ function Button({
           : "bg-white text-black "
       }${
         showOutline === true ? "outline-1 outline-black" : ""
-      } font-bold text-base px-6 py-3 flex items-center justify-center rounded-full gap-x-3 cursor-pointer disabled:bg-gray-400 disabled:cursor-not-allowed`}
+      } font-semibold text-base px-6 py-3 flex items-center justify-center rounded-full gap-x-3 cursor-pointer disabled:bg-gray-400 disabled:cursor-not-allowed`}
       disabled={isDisabled}
       onClick={handleOnSubmit}
     >

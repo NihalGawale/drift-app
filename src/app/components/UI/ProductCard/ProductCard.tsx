@@ -4,9 +4,11 @@ import React from "react";
 import { RupeeIcon } from "../../../Theme/Icons/Icons";
 import Button from "@/app/Theme/UI/Button";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 // This card is used on Home Page in Products Section
 const ProductCard = () => {
+  const navigate = useRouter();
   return (
     <div className="w-full max-w-1/4 h-[550px] border-gray-200 rounded-lg bg-gradient-to-br from-[#fdfdfd] via-[#f7f7f7] to-[#d6d6d6] text-black relative flex flex-col justify-end shadow-xl hover:shadow-2xl transition-shadow duration-300">
       <div className="absolute top-4 left-4 px-2 w-auto rounded-full border-1 flex items-center h-[32px] bg-white text-red-600 font-semibold">
@@ -56,7 +58,9 @@ const ProductCard = () => {
             showArrow={true}
             showOutline={false}
             isDisabled={false}
-            handleOnSubmit={() => {}}
+            handleOnSubmit={() => {
+              navigate.push("/products/1")
+            }}
           />
         </div>
       </div>

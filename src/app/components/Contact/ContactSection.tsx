@@ -139,12 +139,12 @@ function ContactSection() {
                   />
                 </div>
                 {(formErrors["firstName"] && (
-                  <p className="text-red-600 text-base font-medium">
+                  <p className="text-red-600 text-base font-semibold">
                     {formErrors["firstName"]}
                   </p>
                 )) ||
                   (formErrors["lastName"] && (
-                    <p className="text-red-600 text-base font-medium">
+                    <p className="text-red-600 text-base font-semibold">
                       {formErrors["lastName"]}
                     </p>
                   ))}
@@ -175,7 +175,7 @@ function ContactSection() {
                       />
                     </>
                     {formErrors[item.key] && (
-                      <p className="text-red-600 text-sm font-medium">
+                      <p className="text-red-600 text-sm font-semibold">
                         {formErrors[item.key]}
                       </p>
                     )}

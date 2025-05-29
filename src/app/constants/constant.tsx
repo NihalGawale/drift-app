@@ -16,7 +16,7 @@ export const navBarItems = [
 
 export const signInButtons = [
   { id: "log-in", value: "Log In", isRing: false },
-  { id: "sign-up", value: "Sign Up", isRing: true },
+  { id: "sign-up", value: "Be a Drifter", isRing: true },
 ];
 
 export const contactLeftConstants = [

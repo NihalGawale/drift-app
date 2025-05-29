@@ -47,7 +47,7 @@ const FAQ = () => {
       <div className="w-[80%] h-full flex flex-col gap-y-20">
         <div className="w-[60%]">
 
-        <h2 className="text-7xl font-bold mb-6 tracking-wide">FAQ’s</h2>
+        <h2 className="text-7xl font-black mb-6 tracking-wide">FAQ’s</h2>
         <div className="space-y-4 divide-y divide-black ">
           {faqs.map((faq, idx) => (
             <Disclosure
@@ -58,7 +58,6 @@ const FAQ = () => {
             >
               {({ open }) => (
                 <>
-                  {/* <DisclosureButton className="flex justify-between w-full text-left border-b pb-4 font-semibold text-gray-900 text-lg"> */}
                   <DisclosureButton
                     className="group flex w-full items-center justify-between"
                     onClick={() => setOpenIndex(open ? null : idx)}

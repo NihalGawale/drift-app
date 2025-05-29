@@ -94,7 +94,7 @@ function ProductSection() {
         </div>
         <div className="w-full flex justify-center mt-10">
           <button
-            className=" bg-black text-white hover:bg-white hover:text-black shadow-xl font-bold text-lg px-8 py-4 flex items-center justify-center rounded-full gap-x-3 cursor-pointer"
+            className=" bg-black text-white hover:bg-white hover:text-black shadow-xl font-semibold text-lg px-8 py-4 flex items-center justify-center rounded-full gap-x-3 cursor-pointer"
             onClick={handleViewProducts}
           >
             View All Products

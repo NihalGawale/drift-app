@@ -31,9 +31,9 @@ function NavBar() {
         >
           Brand logo and Name
         </div>
-        <div className="w-[60%] 2xl:w-[40%] h-10 flex items-center justify-center gap-x-6 xl:gap-x-8">
+        <div className="w-[60%] h-10 flex items-center justify-center gap-x-6">
           {navLink?.map((item) => (
-            <div key={item.id} className="w-[20%] ">
+            <div key={item.id} className="w-auto flex justify-center ">
               <Button
                 id={item?.id}
                 buttonText={item?.value}
@@ -44,7 +44,7 @@ function NavBar() {
             </div>
           ))}
         </div>
-        <div className="w-[15%] h-10 flex items-center gap-x-4 justify-end">
+        <div className="w-auto h-10 flex items-center gap-x-4 justify-end">
           {signInButtons?.map((item) => (
             <div key={item.id}>
               <SignUpButton
