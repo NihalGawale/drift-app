@@ -9,6 +9,7 @@ import { useInView } from "react-intersection-observer";
 
 import "react-image-gallery/styles/css/image-gallery.css";
 import "react-photo-view/dist/react-photo-view.css";
+import Breadcrumbs from "@/app/components/UI/Breakcrumbs/Breakcrumbs";
 
 const imageUrls = [
   "/assets/1.png",
@@ -59,8 +60,12 @@ function ProductDetails() {
           <p>LIMITED TIME OFFER</p>
         </motion.div>
       </div>
-      <div className="w-[60%] h-auto flex items-end">
-        <div className="w-full h-full flex gap-x-6 pt-30 pb-10">
+
+      <div className="w-[60%] h-auto flex flex-col mt-16">
+        <div className="ml-9">
+          <Breadcrumbs />
+        </div>
+        <div className="w-full h-full flex gap-x-6 pb-10">
           <div className="w-[60%] h-full">
             <div className="w-auto h-auto flex justify-end gap-x-2">
               <div className="flex flex-col gap-2">
@@ -96,7 +101,7 @@ function ProductDetails() {
             </div>
           </div>
           <div className="w-[40%] h-full font-medium pr-8 -mt-1">
-            <div className="w-full h-full flex flex-col gap-y-16">
+            <div className="w-full h-full flex flex-col gap-y-8">
               <div className="flex flex-col gap-y-2">
                 <div>
                   <p className="text-3xl font-bold">Drift Solace Sneakers</p>
@@ -126,7 +131,7 @@ function ProductDetails() {
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col gap-y-12 ">
+              <div className="flex flex-col gap-y-10">
                 <div className="flex flex-col gap-y-5 ">
                   <div className="flex gap-x-2">
                     <p className="font-bold text-lg">Color: </p>
@@ -166,7 +171,7 @@ function ProductDetails() {
                       </p>
                     </div>
                     <p className="h-full text-[#4B4B4B] font-bold">
-                      #Driftres enjoy{" "}
+                      #Drifters enjoy{" "}
                       <span className="text-black">free returns.</span>
                     </p>
                   </div>
