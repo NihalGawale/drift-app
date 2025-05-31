@@ -31,7 +31,7 @@ function Footer() {
             </div>
           </div>
           <div className="w-1/3 h-full">
-            <div className="flex flex-col gap-y-8 max-w-[70%] text-base font-semibold tracking-normal">
+            <div className="flex flex-col gap-y-8 max-w-[70%] text-base font-medium tracking-normal">
               {contactLeftConstants.map((item) => (
                 <div key={item.key} className="flex gap-x-4">
                   <div>{item.icon}</div>
@@ -46,14 +46,14 @@ function Footer() {
             ))}
           </div>
         </div>
-        <div className="w-full h-[20%] flex items-center font-semibold tracking-normal">
+        <div className="w-full h-[20%] flex items-center font-medium tracking-normal">
           <div className="w-1/3">{rightsReserved}</div>
           <div className="w-1/3 flex gap-x-10 justify-center">
             <FacebookIcon />
             <InstagramIcon />
             <TwitterIcon />
           </div>
-          <div className="w-1/3 flex items-center justify-end gap-x-2 font-semibold tracking-normal">
+          <div className="w-1/3 flex items-center justify-end gap-x-2 font-medium tracking-normal">
             Terms & Conditions <TermsPolicyDot /> Privacy Policy
           </div>
         </div>

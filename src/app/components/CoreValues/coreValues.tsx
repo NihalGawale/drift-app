@@ -46,7 +46,7 @@ const CoreValues = () => {
           initial="hidden"
           animate={controls}
           variants={slideInFromLeft}
-          className=" text-7xl font-bold tracking-wide"
+          className=" text-7xl font-black tracking-wide"
         >
           <p> Core Values</p>
         </motion.div>
@@ -62,11 +62,11 @@ const CoreValues = () => {
               key={item.id}
               className="w-1/3 h-[400px]  rounded-2xl bg-white flex flex-col justify-center items-center px-10 shadow-xl"
             >
-              <div className="flex flex-col justify-center items-center gap-y-10">
+              <div className="h-[320px] flex flex-col items-center ">
                 {item.icon}
-                <div className="flex flex-col justify-center items-center gap-y-5 px-4">
-                  <p className="text-4xl font-black"> {item.title}</p>
-                  <p className="text-lg font-semibold text-[#4B4B4B] tracking-normal text-center">
+                <div className="flex flex-col justify-center items-center gap-y-3 px-4 mt-10">
+                  <p className="text-3xl font-bold"> {item.title}</p>
+                  <p className="text-lg font-medium text-[#4B4B4B] tracking-normal text-center">
                     {item.description}
                   </p>
                 </div>

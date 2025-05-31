@@ -40,7 +40,7 @@ function CTASection() {
         <div className="w-full h-full md:h-full bg-white flex flex-col md:justify-center items-center">
           <div className="w-full h-full md:h-full md:p-12 flex flex-col gap-y-8 items-start justify-center ml-72">
             <div className="w-auto flex flex-col gap-y-4">
-              <p className="text-[80px] leading-[90px] text-black font-black">
+              <p className="text-[80px] leading-[90px] text-black font-bold">
                 {width > breakpoint ? (
                   <>
                     Join the club of <br /> #Drifters
@@ -52,7 +52,7 @@ function CTASection() {
                   </>
                 )}
               </p>
-              <p className="text-black font-bold tracking text-lg">
+              <p className="text-black font-medium tracking text-lg">
                 Be First to Know — our latest trends and exclusive offers!
               </p>
             </div>

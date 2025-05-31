@@ -13,7 +13,7 @@ function SectionOne() {
           </p>
           <div className="font-normal tracking-wide flex flex-col gap-y-5 md:gap-y-8">
             <p>
-              <span className="text-xl italic md:text-2xl font-semibold">DRIFT</span> sneakers
+              <span className="text-xl italic md:text-2xl font-medium">DRIFT</span> sneakers
               aren’t just designed — they’re engineered to move with purpose.
               Every pair is built with effortless comfort, premium materials,
               and bold aesthetics that match your drive. Whether you're on the

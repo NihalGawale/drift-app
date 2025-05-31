@@ -44,7 +44,7 @@ const AboutUs = () => {
       className="w-full h-[900px]  bg-[#E6E4DC] py-[60px] relative flex justify-center"
     >
       <div className="w-[80%] h-full z-10 flex flex-col gap-y-20">
-        <div className="w-1/2 flex flex-col gap-y-30 text-7xl font-bold tracking-wide">
+        <div className="w-1/2 flex flex-col gap-y-30 text-7xl font-black tracking-wide">
           About Us
         </div>
         <div className="w-full flex flex-row gap-8 justify-end items-end">
@@ -67,7 +67,7 @@ const AboutUs = () => {
             <p className="text-3xl font-black">
               More Than Just Sneakers. It’s a Way of Moving Through Life.
             </p>
-            <p className="text-xl font-semibold text-[#4B4B4B] tracking-wide leading-8">
+            <p className="text-xl font-medium text-[#4B4B4B] tracking-wide leading-8">
               At Drift, we believe your journey deserves more than just shoes —
               it deserves a companion that moves with your rhythm. Our sneakers
               aren’t just designed to look good — they’re built to feel right,
@@ -78,27 +78,29 @@ const AboutUs = () => {
               keeps you grounded no matter where you're headed.
             </p>
             <div className="flex flex-col gap-y-6">
-              <p className="text-3xl font-black text-black tracking-wide">Why Choose Drift</p>
+              <p className="text-3xl font-black text-black tracking-wide">
+                Why Choose Drift
+              </p>
               <p>
-                <span className="font-semibold text-lg">Made with Purpose{" "}</span>
-                <span className="font-semibold text-lg text-[#4B4B4B]">
+                <span className="font-medium text-lg">Made with Purpose </span>
+                <span className="font-medium text-lg text-[#4B4B4B]">
                   – Sustainable materials that care for the planet
                 </span>
               </p>
               <p>
-                <span className="font-semibold text-lg">
+                <span className="font-medium text-lg">
                   Handcrafted with Heart{" "}
                 </span>
-                <span className="font-semibold text-lg text-[#4B4B4B]">
+                <span className="font-medium text-lg text-[#4B4B4B]">
                   – Artisanal attention to detail in every stitch
                 </span>
               </p>
               <p>
-                <span className="font-semibold text-lg">
+                <span className="font-medium text-lg">
                   Comfort that Carries You{" "}
                 </span>
 
-                <span className="font-semibold text-lg text-[#4B4B4B]">
+                <span className="font-medium text-lg text-[#4B4B4B]">
                   – Ergonomic design for real-world wear
                 </span>
               </p>

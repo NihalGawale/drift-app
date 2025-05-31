@@ -6,6 +6,13 @@ import { useRouter } from "next/navigation";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
+const productsImageRoute = [
+  { image: "products-image.png" },
+  { image: "products-image.png" },
+  { image: "products-image.png" },
+  { image: "products-image.png" },
+];
+
 function ProductSection() {
   const navigate = useRouter();
   const controls = useAnimation();
@@ -56,11 +63,12 @@ function ProductSection() {
           className="w-[50%] flex flex-col gap-y-20"
         >
           <h3 className="text-7xl font-black">Products</h3>
-          <div className="flex flex-col gap-8 ">
+
+          {/* <div className="flex flex-col gap-8 ">
             <p className="text-4xl font-black">
               Find You Perfect Pair, Express Your Style
             </p>
-            <p className="text-xl font-semibold leading-8 text-[#4B4B4B]">
+            <p className="text-xl font-medium leading-8 text-[#4B4B4B]">
               At Drift, we don’t just make sneakers — we craft what moves you.
               Every pair in our collection is designed to support your stride,
               elevate your style, and carry your story. Whether you're chasing
@@ -68,10 +76,10 @@ function ProductSection() {
               — your shoes should feel like they belong.
             </p>
             <div>
-              <p className="text-xl font-semibold leading-8 text-black">
+              <p className="text-xl font-medium leading-8 text-black">
                 Built for comfort. Designed for expression. Worn with purpose.
               </p>
-              <p className="text-xl font-semibold leading-8 text-[#4B4B4B]">
+              <p className="text-xl font-medium leading-8 text-[#4B4B4B]">
                 Because when you walk in Drift, you glide beyond the usual.
               </p>
             </div>
@@ -86,15 +94,14 @@ function ProductSection() {
           src="/assets/rockImage.png"
           alt="products-rock-image"
         />
-        <div className="w-full flex justify-center gap-x-10 z-30">
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
+     */}
+        </motion.div>
+        <div className="w-full flex justify-center gap-x-3 z-30">
+          <ProductCard productsImageRoute={productsImageRoute} />
         </div>
         <div className="w-full flex justify-center mt-10">
           <button
-            className=" bg-black text-white hover:bg-white hover:text-black shadow-xl font-bold text-lg px-8 py-4 flex items-center justify-center rounded-full gap-x-3 cursor-pointer"
+            className=" bg-black text-white hover:bg-white hover:text-black shadow-xl font-medium text-lg px-8 py-4 flex items-center justify-center rounded-full gap-x-3 cursor-pointer"
             onClick={handleViewProducts}
           >
             View All Products
