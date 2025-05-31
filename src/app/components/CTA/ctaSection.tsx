@@ -52,7 +52,7 @@ function CTASection() {
                   </>
                 )}
               </p>
-              <p className="text-black font-semibold tracking text-lg">
+              <p className="text-black font-medium tracking text-lg">
                 Be First to Know — our latest trends and exclusive offers!
               </p>
             </div>

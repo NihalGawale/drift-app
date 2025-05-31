@@ -66,7 +66,7 @@ const CoreValues = () => {
                 {item.icon}
                 <div className="flex flex-col justify-center items-center gap-y-3 px-4 mt-10">
                   <p className="text-3xl font-bold"> {item.title}</p>
-                  <p className="text-lg font-semibold text-[#4B4B4B] tracking-normal text-center">
+                  <p className="text-lg font-medium text-[#4B4B4B] tracking-normal text-center">
                     {item.description}
                   </p>
                 </div>

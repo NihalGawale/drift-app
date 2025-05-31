@@ -101,10 +101,10 @@ function ContactSection() {
           <div className="w-[350px] h-full flex justify-center pt-10 bg-[#000000B8] rounded-l-lg">
             <div className="w-[80%] h-[70%] flex flex-col gap-y-20">
               <div className="flex flex-col gap-y-9">
-                <p className="font-semibold text-lg">Contact Information</p>
+                <p className="font-medium text-lg">Contact Information</p>
                 <div className="flex flex-col gap-y-9">
                   {contactLeftConstants.map((item) => (
-                    <div key={item.key} className="flex text-base gap-x-2 font-semibold tracking-normal">
+                    <div key={item.key} className="flex text-base gap-x-2 font-medium tracking-normal">
                       <div>{item.icon}</div>
                       <div className="-mt-0.5">{item.contact}</div>
                     </div>
@@ -120,31 +120,31 @@ function ContactSection() {
           </div>
           <div className="w-[450px] h-full bg-[#FFFFFFCC] opacity-80 rounded-r-lg flex justify-center py-10 text-black">
             <div className="w-[80%] h-auto flex flex-col gap-y-8">
-              <p className="font-semibold text-lg">Send Us a Message</p>
+              <p className="font-medium text-lg">Send Us a Message</p>
               <div className="flex flex-col gap-y-2">
                 <div className="flex gap-x-6">
                   <input
                     key="firstName"
                     required={true}
-                    className="border-1 py-2.5 px-4 w-1/2 rounded-lg font-semibold text-base"
+                    className="border-1 py-2.5 px-4 w-1/2 rounded-lg font-medium text-base"
                     placeholder="First Name*"
                     onChange={(e) => handleOnChange(e, "firstName")}
                   />
                   <input
                     key="lastName"
                     required={true}
-                    className="border-1 py-2.5 px-4 w-1/2 rounded-lg font-semibold text-base"
+                    className="border-1 py-2.5 px-4 w-1/2 rounded-lg font-medium text-base"
                     placeholder="Last Name*"
                     onChange={(e) => handleOnChange(e, "lastName")}
                   />
                 </div>
                 {(formErrors["firstName"] && (
-                  <p className="text-red-600 text-base font-semibold">
+                  <p className="text-red-600 text-base font-medium">
                     {formErrors["firstName"]}
                   </p>
                 )) ||
                   (formErrors["lastName"] && (
-                    <p className="text-red-600 text-base font-semibold">
+                    <p className="text-red-600 text-base font-medium">
                       {formErrors["lastName"]}
                     </p>
                   ))}
@@ -167,7 +167,7 @@ function ContactSection() {
                       <input
                         className={` ${
                           item.key === "message" ? "pb-20 rounded-lg" : ""
-                        } border-1 py-2.5 px-10 w-full rounded-lg font-semibold text-base mb-2`}
+                        } border-1 py-2.5 px-10 w-full rounded-lg font-medium text-base mb-2`}
                         placeholder={item.value}
                         required={item.isRequired}
                         value={userMessage[item.key]}
@@ -175,7 +175,7 @@ function ContactSection() {
                       />
                     </>
                     {formErrors[item.key] && (
-                      <p className="text-red-600 text-sm font-semibold">
+                      <p className="text-red-600 text-sm font-medium">
                         {formErrors[item.key]}
                       </p>
                     )}

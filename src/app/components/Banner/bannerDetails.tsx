@@ -60,7 +60,7 @@ function BannerDetails({ width, breakpoint }: BannerDetailsProps) {
       </div>
       <button
         type="button"
-        className={`   bg-black text-white font-semibold text-lg px-10 py-3 flex items-center justify-center rounded-full gap-x-3 cursor-pointer disabled:bg-gray-400 disabled:cursor-not-allowed tracking-wide`}
+        className={`   bg-black text-white font-medium text-lg px-10 py-3 flex items-center justify-center rounded-full gap-x-3 cursor-pointer disabled:bg-gray-400 disabled:cursor-not-allowed tracking-wide`}
         onClick={handleOnSubmit}
       >
         Explore

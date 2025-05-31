@@ -70,7 +70,7 @@ const FAQ = () => {
                   {open && (
                     <DisclosurePanel
                       transition
-                      className="mt-2 text-lg max-w-[80%] leading-8 text-[#4B4B4B]  transition duration-400 ease-out data-closed:-translate-y-6 data-closed:opacity-0 font-semibold"
+                      className="mt-2 text-lg max-w-[80%] leading-8 text-[#4B4B4B]  transition duration-400 ease-out data-closed:-translate-y-6 data-closed:opacity-0 font-medium"
                     >
                       {faq.answer}
                     </DisclosurePanel>

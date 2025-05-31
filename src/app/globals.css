@@ -34,8 +34,13 @@
 
 @font-face {
   font-family: "HelveticaCustom";
-  src: url("/fonts/Helvetica.ttf") format("truetype");
+  src: url("/fonts/HelveticaBold.ttf") format("truetype");
   font-weight: 600;
+}
+@font-face {
+  font-family: "HelveticaCustom";
+  src: url("/fonts/Helvetica.ttf") format("truetype");
+  font-weight: 500;
 }
 
 @font-face {

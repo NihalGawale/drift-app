@@ -67,7 +67,7 @@ const AboutUs = () => {
             <p className="text-3xl font-black">
               More Than Just Sneakers. It’s a Way of Moving Through Life.
             </p>
-            <p className="text-xl font-semibold text-[#4B4B4B] tracking-wide leading-8">
+            <p className="text-xl font-medium text-[#4B4B4B] tracking-wide leading-8">
               At Drift, we believe your journey deserves more than just shoes —
               it deserves a companion that moves with your rhythm. Our sneakers
               aren’t just designed to look good — they’re built to feel right,
@@ -82,25 +82,25 @@ const AboutUs = () => {
                 Why Choose Drift
               </p>
               <p>
-                <span className="font-semibold text-lg">Made with Purpose </span>
-                <span className="font-semibold text-lg text-[#4B4B4B]">
+                <span className="font-medium text-lg">Made with Purpose </span>
+                <span className="font-medium text-lg text-[#4B4B4B]">
                   – Sustainable materials that care for the planet
                 </span>
               </p>
               <p>
-                <span className="font-semibold text-lg">
+                <span className="font-medium text-lg">
                   Handcrafted with Heart{" "}
                 </span>
-                <span className="font-semibold text-lg text-[#4B4B4B]">
+                <span className="font-medium text-lg text-[#4B4B4B]">
                   – Artisanal attention to detail in every stitch
                 </span>
               </p>
               <p>
-                <span className="font-semibold text-lg">
+                <span className="font-medium text-lg">
                   Comfort that Carries You{" "}
                 </span>
 
-                <span className="font-semibold text-lg text-[#4B4B4B]">
+                <span className="font-medium text-lg text-[#4B4B4B]">
                   – Ergonomic design for real-world wear
                 </span>
               </p>
