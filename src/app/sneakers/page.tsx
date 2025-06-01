@@ -47,7 +47,7 @@ function Products() {
         </div>
       </div>
       <AdsNavBar children={ads()} />
-      <div className="w-[85%] py-20">
+      <div className="w-[80%] py-20">
         <Breadcrumbs />
         <div className="grid grid-rows-1 md:grid-cols-3 gap-4 mt-4">
           <div
@@ -59,7 +59,7 @@ function Products() {
             <div className="w-full h-[75%] cursor-pointer relative">
               <Image src="/assets/1.png" alt="" fill={true} />
             </div>
-            <div className="text-[#292626] font-extralight text-lg my-3 cursor-pointer">
+            <div className="font-medium text-xl my-3 cursor-pointer">
               DRIFT Solace{" "}
             </div>
             <ProductPrice launchPrice="3499" mrp="4500" />
