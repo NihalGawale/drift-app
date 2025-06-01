@@ -6,6 +6,7 @@ import SignUpButton from "../UI/Button/SignUpButton";
 import { navBarItems, signInButtons } from "@/app/constants/constant";
 import { animateScroll as scroll } from "react-scroll";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 function NavBar() {
   const [navLink, setNavLink] = useState(navBarItems);
@@ -27,9 +28,23 @@ function NavBar() {
     <div className="w-full flex justify-center z-50 top-1 fixed font-bold">
       <div className="w-[80%] h-20 mt-6 bg-[#F2F1EDB8] backdrop-blur-[5px] shadow-[1px_4px_12px_0px_rgba(0,0,0,0.16)] rounded-full flex justify-between items-center px-12 py-3 text-lg">
         <div
+          className="flex gap-x-4"
           onClick={() => scroll.scrollToTop({ duration: 500, smooth: true })}
         >
-          Brand logo and Name
+          <div className="w-[44px] h-[24px] relative">
+            <Image
+              src="/assets/brand-logo-black.png"
+              alt="drift-brand-logo"
+              fill={true}
+            />
+          </div>
+          <div className="w-[94px] h-[24px] relative">
+            <Image
+              src="/assets/brand-name-black.png"
+              alt="drift-brand-name"
+              fill={true}
+            />
+          </div>
         </div>
         <div className="w-[60%] h-10 flex items-center justify-center gap-x-6">
           {navLink?.map((item) => (

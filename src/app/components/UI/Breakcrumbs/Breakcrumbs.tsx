@@ -24,7 +24,7 @@ const Breadcrumbs = () => {
   return (
     <nav
       aria-label="breadcrumb"
-      className="text-sm text-[#4B4B4B]  flex items-center flex-wrap gap-3 px-4 py-2 tracking-wide"
+      className="text-sm text-[#4B4B4B]  flex items-center flex-wrap gap-3 pr-4 py-2 tracking-wide"
     >
       <Link href="/" className="font-semibold text-black hover:underline">
         Home

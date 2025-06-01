@@ -58,14 +58,14 @@ function BannerDetails({ width, breakpoint }: BannerDetailsProps) {
           streetwise aesthetics with performance-driven innovation.
         </p>
       </div>
-      <button
+      {/* <button
         type="button"
         className={`   bg-black text-white font-medium text-lg px-10 py-3 flex items-center justify-center rounded-full gap-x-3 cursor-pointer disabled:bg-gray-400 disabled:cursor-not-allowed tracking-wide`}
         onClick={handleOnSubmit}
       >
         Explore
         {<ArrowIcon />}
-      </button>
+      </button> */}
     </div>
   );
 }
