@@ -30,7 +30,7 @@ function Products() {
 
   return (
     <div className="w-full h-full flex flex-col items-center justify-center">
-      <div className="w-full h-16 bg-black flex gap-4 justify-center items-center">
+      <div onClick={() => navigate.push("/")} className="w-full h-16 bg-black flex gap-4 justify-center items-center">
         <div className="w-[44px] h-[24px] relative">
           <Image
             src="/assets/brand-logo-white.png"
