@@ -10,6 +10,8 @@ import { useInView } from "react-intersection-observer";
 import "react-image-gallery/styles/css/image-gallery.css";
 import "react-photo-view/dist/react-photo-view.css";
 import Breadcrumbs from "@/app/components/UI/Breakcrumbs/Breakcrumbs";
+import Link from "next/link";
+import AdsNavBar from "@/app/components/common/adsNavBar";
 
 const imageUrls = [
   "/assets/1.png",
@@ -41,28 +43,22 @@ function ProductDetails() {
     { id: "5", size: "UK-10" },
   ];
 
+  function ads() {
+    return (
+      <>
+        <p>LIMITED TIME OFFER</p>
+        <p>FLAT 30% OFF</p>
+        <p>Only for first 100 pairs, Hurry Up!</p>
+      </>
+    );
+  }
+
   return (
     <div className="w-full h-full flex justify-center items-center overflow-auto flex-col">
-      <div className="w-full overflow-hidden h-20 border-b border-gray-200 shadow-xl text-black flex justify-center items-center">
-        <motion.div
-          ref={ref}
-          animate={{ x: ["100%", "-100%"] }}
-          transition={{
-            duration: 20,
-            ease: "linear",
-            repeat: Infinity,
-          }}
-          className="w-full font-bold text-2xl tracking-wide flex justify-between"
-        >
-          <p>FLAT 30% OFF</p>
-          <p>LIMITED TIME OFFER</p>
-          <p>FLAT 30% OFF</p>
-          <p>LIMITED TIME OFFER</p>
-        </motion.div>
-      </div>
+      <AdsNavBar children={ads()} />
 
-      <div className="w-[60%] h-auto flex flex-col mt-16">
-        <div className="ml-9">
+      <div className="w-[60%] h-auto flex flex-col mt-16 gap-y-4">
+        <div className="ml-12">
           <Breadcrumbs />
         </div>
         <div className="w-full h-full flex gap-x-6 pb-10">
@@ -84,7 +80,7 @@ function ProductDetails() {
                 ))}
               </div>
               {/* Main image on the right */}
-              <div className="relative w-[550px] h-[680px] overflow-hidden">
+              <div className="relative w-[550px] h-[680px] overflow-hidden rounded-md">
                 <AnimatePresence mode="wait">
                   <motion.img
                     key={imageUrls[activeIndex]}
@@ -161,7 +157,7 @@ function ProductDetails() {
                 </div>
                 <div className="w-full flex flex-col gap-y-5">
                   <button className="bg-black text-white py-3 w-full text-xl font-medium cursor-pointer">
-                    Add to Cart
+                    Grab the Deal
                   </button>
                   <div className="flex flex-col gap-y-2">
                     <div className="flex gap-x-3">
@@ -211,7 +207,7 @@ function ProductDetails() {
               </div>
               <div className="flex flex-col gap-y-5">
                 <p className="font-bold text-lg">Descripiton</p>
-                <p className="text-[#4B4B4B]">
+                <p className="text-[#4B4B4B] text-base">
                   Step into your new daily essential—where modern minimalism
                   meets all-day wearability. Crafted in soft, breathable
                   materials with warm, neutral tones, Drift Solace is designed
@@ -219,10 +215,36 @@ function ProductDetails() {
                   headed to a café, catching a flight, or moving through your
                   9-to-9, this pair blends seamlessly with your lifestyle.
                 </p>
-                <div className="text-[#4B4B4B]">
+                <div className="text-[#4B4B4B]  text-base">
                   <p>Color: White Beige Royal-Blue</p>
                   <p>Country of Origin: India</p>
                 </div>
+              </div>
+              <div className="flex flex-col gap-y-5">
+                <p className="font-bold text-lg">Shipping & Returns</p>
+                <p className="text-[#4B4B4B] text-base">
+                  Free return on all qualifying orders within 7 days of your
+                  order delivery date. Visit our{" "}
+                  <Link
+                    href=""
+                    className="underline underline-offset-4 decoration-2 decoration-[#b4aeae]"
+                  >
+                    {" "}
+                    Return Policy{" "}
+                  </Link>{" "}
+                  for more information.
+                </p>
+                <p className="text-[#4B4B4B]  text-base">
+                  For any queries, please contact Customer Service on email at
+                  <span className="text-[#302f2f] font-semibold">
+                    {" "}
+                    teamdriftwear@gmail.com
+                  </span>
+                </p>
+                {/* <div className="text-[#4B4B4B]">
+                  <p>Color: White Beige Royal-Blue</p>
+                  <p>Country of Origin: India</p>
+                </div> */}
               </div>
             </div>
           </div>
@@ -231,20 +253,21 @@ function ProductDetails() {
       <div className="w-full h-auto bg-[#F2F1ED] px-[50px] pt-20 pb-40 ">
         <div className="flex flex-col gap-y-4">
           <div className="flex flex-col gap-y-3">
-            <p className="text-5xl font-semibold mb-10">Product Story</p>
-            <p className="text-2xl font-medium">
-              Introducing the DRIFT Solace – where timeless style meets everyday
-              ease.
+            <p className="text-5xl font-semibold mb-10">
+              Style That Moves With You.
             </p>
-            <p className="text-base font-extralight text-[#4B4B4B]">
-              Crafted with a premium PU leather base, soft mocha accents, and
-              deep navy detailing, this sneaker channels a clean,
-              heritage-inspired aesthetic built for the modern lifestyle. With
-              its minimal curves, sharp lines, and bold DRIFT insignia, the
-              Solace is designed to glide effortlessly from street to statement.
-              Whether you're headed out or dressing down, it's the ultimate
-              balance of comfort, versatility, and low-key luxury – all rooted
-              in Indian craftsmanship.
+            <p className="text-2xl font-extralight">
+              Meet the DRIFT Solace — a sneaker designed to match your pace,
+              your mood, and your story.
+            </p>
+            <p className="text-[17px] font-extralight text-[#4B4B4B]">
+              Crafted in premium PU leather with beighe overlays and royal navy
+              accents, Solace blends minimalist curves with bold attitude. It’s
+              more than a sneaker — it’s your everyday essential reimagined.
+              Whether you're walking the streets, owning your moment, or
+              dressing down with confidence, DRIFT Solace brings together
+              timeless design and modern edge — rooted proudly in Indian
+              craftsmanship.
             </p>
           </div>
           <div className="flex gap-x-4">

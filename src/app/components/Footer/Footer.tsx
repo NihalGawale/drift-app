@@ -21,11 +21,18 @@ function Footer() {
     <div className="w-full h-[460px] bg-black flex justify-center items-center text-white">
       <div className="w-[80%] h-[80%] ">
         <div className="h-[80%] flex border-b-1 border-[#434343]">
-          <div className="w-1/3 h-full flex">
-            <div className="w-[80px] h-[60px] relative">
+          <div className="w-1/3 h-full flex gap-x-4">
+            <div className="w-[44px] h-[24px] relative">
               <Image
-                src="/assets/BrandLogo.jpeg"
-                alt="drift-brand-image"
+                src="/assets/brand-logo-white.png"
+                alt="drift-brand-logo"
+                fill={true}
+              />
+            </div>
+            <div className="w-[94px] h-[24px] relative">
+              <Image
+                src="/assets/brand-name-white.png"
+                alt="drift-brand-name"
                 fill={true}
               />
             </div>

@@ -67,7 +67,7 @@ const ProductCard = ({ productsImageRoute }: ProductCardProps) => {
         </div>
       </div> */}
       {productsImageRoute?.map((item, index) => (
-        <div key={index} className="w-full h-full relative">
+        <div key={index} className="w-1/2 h-full relative">
           <Image
             src={`/assets/${item.image}`}
             alt={`drift-sneaker-${index}`}

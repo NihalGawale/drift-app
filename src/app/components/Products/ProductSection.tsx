@@ -49,7 +49,7 @@ function ProductSection() {
   };
 
   const handleViewProducts = () => {
-    navigate.push("/products");
+    navigate.push("/sneakers");
   };
 
   return (
