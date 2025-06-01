@@ -12,6 +12,8 @@ import "react-photo-view/dist/react-photo-view.css";
 import Breadcrumbs from "@/app/components/UI/Breakcrumbs/Breakcrumbs";
 import Link from "next/link";
 import AdsNavBar from "@/app/components/common/adsNavBar";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const imageUrls = [
   "/assets/1.png",
@@ -32,6 +34,7 @@ const productsImageRoute = [
 ];
 
 function ProductDetails() {
+  const navigate = useRouter();
   const [activeIndex, setActiveIndex] = useState(0);
   const [ref] = useInView({ triggerOnce: true, threshold: 0.2 });
 
@@ -55,6 +58,25 @@ function ProductDetails() {
 
   return (
     <div className="w-full h-full flex justify-center items-center overflow-auto flex-col">
+      <div
+        onClick={() => navigate.push("/")}
+        className="w-full h-16 bg-black flex gap-4 justify-center items-center"
+      >
+        <div className="w-[44px] h-[24px] relative">
+          <Image
+            src="/assets/brand-logo-white.png"
+            alt="drift-brand-logo"
+            fill={true}
+          />
+        </div>
+        <div className="w-[94px] h-[24px] relative">
+          <Image
+            src="/assets/brand-name-white.png"
+            alt="drift-brand-name"
+            fill={true}
+          />
+        </div>
+      </div>
       <AdsNavBar children={ads()} />
 
       <div className="w-[60%] h-auto flex flex-col mt-16 gap-y-4">
@@ -236,15 +258,11 @@ function ProductDetails() {
                 </p>
                 <p className="text-[#4B4B4B]  text-base">
                   For any queries, please contact Customer Service on email at
-                  <span className="text-[#302f2f] font-semibold">
+                  <span className="text-black font-medium">
                     {" "}
                     teamdriftwear@gmail.com
                   </span>
                 </p>
-                {/* <div className="text-[#4B4B4B]">
-                  <p>Color: White Beige Royal-Blue</p>
-                  <p>Country of Origin: India</p>
-                </div> */}
               </div>
             </div>
           </div>

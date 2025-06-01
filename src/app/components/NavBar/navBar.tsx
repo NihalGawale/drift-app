@@ -19,7 +19,7 @@ function NavBar() {
     setNavLink(updatedNavLinks);
 
     if (navLinkId === "products") {
-      navigate.push("/products");
+      navigate.push("/sneakers");
     }
     console.log(navLinkId, "nav link id");
   };
